@@ -2,10 +2,10 @@ var express = require('express')
 var app = express(); //starts express
 var server = require('http').Server(app)
 var io = require('socket.io')(server)
+var port = process.env.PORT || 3000
 
-server.listen(3000, function(){
-
-  console.log("Server at 3000");
+server.listen(port, function(){
+  console.log("App is running on port " + port);
 })
 
 app.use (express.static('public') ) //serves out public folder
