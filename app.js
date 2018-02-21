@@ -4,6 +4,13 @@ var server = require('http').Server(app)
 var io = require('socket.io')(server)
 var port = process.env.PORT || 3000
 
+//==========
+//=NON UTILITY====
+//==========
+
+var clients = [];
+
+
 server.listen(port, function(){
   console.log("App is running on port " + port);
 })
@@ -16,5 +23,13 @@ io.on('connect', function(socket){
 
     io.emit('projectionRectangle', data)
   })
+  socket.on('testInput2Message', function(testInput2Data){
+    io.emit('testInput2ProjectionMessage',testInput2Data)
+
+  })
+
+
+
+
   console.log(socket.id);
 })

@@ -5,3 +5,8 @@ socket.on('projectionRectangle', function(data){
 
 
 })
+
+socket.on('testInput2ProjectionMessage', function(testInput2Value){
+$("#promptResponses").append('<p>'+ testInput2Value +'</p>')
+
+})
