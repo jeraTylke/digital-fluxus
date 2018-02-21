@@ -1,3 +1,5 @@
+// NOT USED ...yet
+
 var socket = io.connect('http://localhost:3000')
 var names = [
   "johnny",
@@ -15,14 +17,11 @@ var names = [
   "Bill"
 ]
 
-
   jQuery(document).ready(function($) {
     names.sort(function(){ return 0.5 - Math.random() }); // this randomly shuffles our name array on server start
     console.log(names[3]);
 
   });
-
-
 
 $('button').click(function(){
   socket.emit('addRectangle', true)

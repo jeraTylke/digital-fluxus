@@ -1,22 +1,24 @@
+// INTERACTIVE PROMPT CONTROLLER
+/////////////////////////////////
+
+// This page handles the interactive prompt submission pages
+
 var socket = io.connect();
 
 socket.on('connect', function(data){
 
+// When clicking the submit button on certain inputs, start a function
+
 $('#testInput2Submit').on('click', function(event) {
   event.preventDefault();
-  console.log(this);
-  $(this).prop('disabled', 'true')
-  $('.newPromptButton').addClass('active')
-  /* Act on the event */
-  var testInput2Value = $('#testInput2').val();
-  console.log(testInput2Value);
+  $(this).prop('disabled', 'true') // Disables the submit button so something can only be submitted once.
+  $('.newPromptButton').addClass('active') // Shows the 'new prompt' button
 
-  socket.emit('testInput2Message', testInput2Value)
-});
+  var testInput2Value = $('#testInput2').val(); // Takes the value submitted into the prompt input field and stores it in a variable.
+
+  socket.emit('testInput2Message', testInput2Value) // Sends the value submitted into the prompt that was stored in the variable to the server.
+}); // END INDIVIDUAL PROMPT FUNCTION
 
 
 
-
-})
-
-// socket.emit('clearScreen', submittedAnswer)
+}) //END CONNECTION
