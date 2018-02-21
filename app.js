@@ -1,35 +1,36 @@
+// SERVER
+///////////
+
 var express = require('express')
 var app = express(); //starts express
 var server = require('http').Server(app)
 var io = require('socket.io')(server)
 var port = process.env.PORT || 3000
 
-//==========
-//=NON UTILITY====
-//==========
+/*
+===================
+=== NON UTILITY ===
+===================
+*/
 
-var clients = [];
+var clients = []; // UNUSED
 
 
-server.listen(port, function(){
+server.listen(port, function(){ // Starts running the app on a network port
   console.log("App is running on port " + port);
 })
 
-app.use (express.static('public') ) //serves out public folder
+app.use (express.static('public') ) // sets public folder as public-viewable folder.
 
 io.on('connect', function(socket){
-  socket.on('addRectangle', function(data){
-    console.log("I got da message, boiiii " + data);
+// Server functions
 
-    io.emit('projectionRectangle', data)
-  })
+
+// When the server 'hears' or receives a message, start a function, and push a variable containing data through (prompt response).
   socket.on('testInput2Message', function(testInput2Data){
+    // This response message is then sent to your projection.html page (makes it visible on screen because it is listening for that message)
     io.emit('testInput2ProjectionMessage',testInput2Data)
-
   })
 
 
-
-
-  console.log(socket.id);
-})
+}) //END SERVER FUNCTIONS
