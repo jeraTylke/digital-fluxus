@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Soup</title>
+    <link rel="stylesheet" href="/css/prompt.css">
+  </head>
+  <body>
+ <!-- This is the interactive Prompt. You enter the answer here. -->
+
+<!-- as new inputs are added, ids are changed to reflect the prompt number -->
+<h1 class="prompt">What is the superior Soup of choice.</h1>
+  <input type="text" name="promptAnswer" value="" id="soupInput" placeholder="Enter answer here">
+  <button type="button" name="soupInputSubmit" id="soupInputSubmit">Submit</button>
+    <div class="mainBody">
+
+
+      <a href="/prompts.html"class="newPromptButton">next prompt</a>
+    </div>
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="/js/prompt.js" charset="utf-8"></script>
+    <script src="/js/interactivePrompt.js" charset="utf-8"></script>
+  </body>
+</html>

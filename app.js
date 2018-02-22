@@ -33,4 +33,71 @@ io.on('connect', function(socket){
   })
 
 
+//2 fave books
+  socket.on('bookInputMessage', function(bookInputData){
+    io.emit('bookInputProjectionMessage',bookInputData)
+  })
+
+// modern Art
+socket.on('modernInputMessage', function(modernInputData){
+  io.emit('modernInputProjectionMessage',modernInputData)
+})
+
+//mood
+//////
+socket.on('moodInputMessage', function(moodInputData){
+  io.emit('moodInputProjectionMessage',moodInputData)
+})
+
+//soup
+//////
+socket.on('soupInputMessage', function(soupInputData){
+  io.emit('soupInputProjectionMessage',soupInputData)
+})
+
+
+//beat
+//////
+socket.on('beatInputMessage', function(beatInputData){
+  io.emit('beatInputProjectionMessage',beatInputData)
+})
+
+
+//tall giraffe
+//////////////
+socket.on('tallInputMessage', function(tallInputData){
+  io.emit('tallInputProjectionMessage',tallInputData)
+})
+
+
+//box
+/////
+socket.on('boxInputMessage', function(boxInputData){
+  io.emit('boxInputProjectionMessage',boxInputData)
+})
+
+//story
+///////
+socket.on('storyInputMessage', function(storyInputData){
+  io.emit('storyInputProjectionMessage',storyInputData)
+})
+
+//penguin
+/////////
+socket.on('penInputMessage', function(penInputData){
+  io.emit('penInputProjectionMessage',penInputData)
+})
+
+//nightmare
+///////////
+socket.on('nightInputMessage', function(nightInputData){
+  io.emit('nightInputProjectionMessage',nightInputData)
+})
+
+
+
+
+
+
+
 }) //END SERVER FUNCTIONS

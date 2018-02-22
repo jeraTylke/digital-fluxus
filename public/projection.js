@@ -14,9 +14,84 @@ $("#promptResponses").append('<p>'+ testInput2Value +'</p>')
 // append a new message to the #promptResponses DIV and add a new paragraph tag using data from one of the prompt submissions.
 })
 
-// EXAMPLE
-socket.on('testInput3ProjectionMessage', function(testInput3Value){
-$("#promptResponses").append('<p>'+ testInput3Value +'</p>')
 
+//2 fave books
+socket.on('bookInputProjectionMessage', function(bookInputValue){
+$("#promptResponses").append('<p>'+ bookInputValue +'</p>')
 
 })
+
+//modern art
+socket.on('modernInputProjectionMessage', function(modernInputValue){
+$("#promptResponses").append('<p>'+ modernInputValue +'</p>')
+
+})
+
+//mood
+socket.on('moodInputProjectionMessage', function(moodInputValue){
+$("#promptResponses").append('<p>'+ moodInputValue +'</p>')
+
+})
+
+//soup
+//////
+socket.on('soupInputProjectionMessage', function(soupInputValue){
+$("#promptResponses").append('<p>'+ soupInputValue +'</p>')
+
+})
+
+
+//beat
+//////
+socket.on('beatInputProjectionMessage', function(beatInputValue){
+$("#promptResponses").append('<p>'+ beatInputValue +'</p>')
+
+})
+
+//tall giraffe
+//////////////
+socket.on('tallInputProjectionMessage', function(tallInputValue){
+$("#promptResponses").append('<p>'+ tallInputValue +'</p>')
+
+})
+
+
+//box
+/////
+socket.on('boxInputProjectionMessage', function(boxInputValue){
+$("#promptResponses").append('<p>'+ boxInputValue +'</p>')
+
+})
+
+//story
+///////
+socket.on('storyInputProjectionMessage', function(storyInputValue){
+$("#promptResponses").append('<p>'+ storyInputValue +'</p>')
+
+})
+
+//penguin
+/////////
+socket.on('penInputProjectionMessage', function(penInputValue){
+$("#promptResponses").append('<p>'+ penInputValue +'</p>')
+
+})
+
+//nightmare
+///////////
+socket.on('nightInputProjectionMessage', function(nightInputValue){
+$("#promptResponses").append('<p>'+ nightInputValue +'</p>')
+
+})
+
+
+
+
+
+
+// EXAMPLE
+// socket.on('testInput3ProjectionMessage', function(testInput3Value){
+// $("#promptResponses").append('<p>'+ testInput3Value +'</p>')
+
+
+// })
