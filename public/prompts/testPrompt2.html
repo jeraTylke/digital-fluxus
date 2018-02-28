@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>prompt2</title>
-    <link rel="stylesheet" href="/css/prompt.css">
-  </head>
-  <body>
- <!-- This is the interactive Prompt. You enter the answer here. -->
 
-<!-- as new inputs are added, ids are changed to reflect the prompt number -->
+<head>
+  <meta charset="utf-8">
+  <title>prompt2</title>
+  <link rel="stylesheet" href="/css/prompt.css">
+</head>
+
+<body>
+  <!-- This is the interactive Prompt. You enter the answer here. -->
+
+  <!-- as new inputs are added, ids are changed to reflect the prompt number -->
   <input type="text" name="promptAnswer" value="" id="testInput2" placeholder="Enter answer here">
   <button type="button" name="testInput2Submit" id="testInput2Submit">Submit</button>
-    <div class="mainBody">
-      <h1 class="prompt">oop</h1>
-      <p>do the dew. Mt. Dew.</p>
+  <div class="mainBody">
+    <h1 class="prompt">oop</h1>
+    <p>do the dew. Mt. Dew.</p>
 
-      <a href="/prompts.html"class="newPromptButton">next prompt</a>
-    </div>
+    <a href="/prompts.html" class="newPromptButton">next prompt</a>
+  </div>
 
-    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="/js/prompt.js" charset="utf-8"></script>
-    <script src="/js/interactivePrompt.js" charset="utf-8"></script>
-  </body>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="/js/main.js" charset="utf-8"></script>
+</body>
+
 </html>

@@ -3,6 +3,8 @@
 
 // This page handles the interactive prompt submission pages
 
+console.log("🐋");
+
 var socket = io.connect();
 
 socket.on('connect', function(data){
