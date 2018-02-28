@@ -1,10 +1,37 @@
 (function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
+// universal scripts -> gets loaded on every page
+/////////////////////////////////////////////////
+
+// to bundle, run this command in the terminal:
+// watchify bundle.js -o public/js/main.js -v
+
+
+// first, we require any modules or javascript libraries we need
 var cookies = require('js-cookie');
 var $ = require('jquery');
 window.$ = window.jQuery = $;
 
+// then, we include any of our own custom scripts
 var prompt = require('./public/js/prompt.js')
 var prompt = require('./public/js/interactivePrompt.js')
+
+
+
+
+/*
+=====================
+==UNIVERSAL SCRIPTS==
+=====================
+*/
+var url = location.pathname;
+
+var promptPages = ["moodIP","color","ayy3"]
+
+for (var i = 0; i < promptPages.length; i++) {
+  if(url.indexOf(promptPages[i]) > -1){
+    console.log("Ayy this is "+promptPages[i]);
+  }
+}
 
 },{"./public/js/interactivePrompt.js":4,"./public/js/prompt.js":5,"jquery":2,"js-cookie":3}],2:[function(require,module,exports){
 /*!
