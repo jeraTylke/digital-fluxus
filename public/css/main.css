@@ -6,7 +6,8 @@ html, body {box-sizing: border-box;margin: 0;padding: 0;}
 
 .mainBody {
   height: 100%;
-  background: coral
+  background: coral;
+  font-family: "Play", sans-serif;
 
 }
 
@@ -39,9 +40,43 @@ html, body {box-sizing: border-box;margin: 0;padding: 0;}
   width: 60%;
 
 }
-#startButton{
 
+.btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Play";
 }
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.btn.start {
+  -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+}
+.btn.start:hover {
+  -webkit-box-shadow: 0 0 40px 40px #e74c3c inset;
+          box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
 .mainContent p{
   text-align: center;
   /*font-weight: bold;*/
