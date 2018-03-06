@@ -3,7 +3,8 @@
 
 // This page handles all the incoming messages from the server that get output to our projection page.
 
-var socket = io.connect('http://localhost:3000') // Connect to the server
+var socket = io.connect() // Connect to the server -- USE FOR LOCAL TESTING
+// var socket = io.connect('http://localhost:3000') // Connect to the server -- USE FOR LOCAL TESTING
 
 
 // Each one of these "socket.on"'s will exist for each prompt page.
