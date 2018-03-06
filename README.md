@@ -24,3 +24,7 @@ then
 then
 
 **git push**
+
+> Links/resources
+
+http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video
