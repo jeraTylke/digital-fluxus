@@ -24,10 +24,11 @@ var prompt = require('./public/js/interactivePrompt.js')
 */
 var url = location.pathname;
 
-var promptPages = ["moodIP","color","ayy3"]
+var promptPages = ["moodIP","color","nightIP"]
 
 for (var i = 0; i < promptPages.length; i++) {
   if(url.indexOf(promptPages[i]) > -1){
     console.log("Ayy this is "+promptPages[i]);
+
   }
 }
