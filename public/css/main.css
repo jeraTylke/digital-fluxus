@@ -1,20 +1,54 @@
 @import url('plugin/flexboxgrid.css');
-
+@import url('https://fonts.googleapis.com/css?family=Play:400,700');
 html, body {box-sizing: border-box;margin: 0;padding: 0;}
 *,*::before,*::after {box-sizing: inherit;}
 
 
 .mainBody {
-  max-width: 1300px;
+  height: 100%;
+  background: coral
+
 }
 
 .promptTitle {
-  min-height: 100px;
-  margin-bottom: 30px;
+  margin: 0px;
+}
+.fluxusLogo{
+  border: 1px dashed green;
+  min-height: 200px;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .mainContainer {
-  min-height: inherit;
+  height: 100vh;
+  /*max-width: 1300px;*/
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainContent{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+
+}
+#startButton{
+
+}
+.mainContent p{
+  text-align: center;
+  /*font-weight: bold;*/
+  color: white;
+  padding: 0 10px;
+  font-size: 18pt;
+  font-family: "Play",sans-serif;
 }
 
 .promptDescription {
