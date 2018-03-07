@@ -9,14 +9,35 @@
  <!-- This is the interactive Prompt. You enter the answer here. -->
 
 <!-- as new inputs are added, ids are changed to reflect the prompt number -->
+<div class="mainBody">
+
+<div class="mainContainer">
+
+
+  <div class="mainContent">
 <h1 class="prompt">Are giraffes too tall?</h1>
   <p>Yes? No? Maybe? Other?</p>
-  <input type="text" name="promptAnswer" value="" id="tallInput" placeholder="Enter answer here">
-  <button type="button" name="tallInputSubmit" id="tallInputSubmit">Submit</button>
-    <div class="mainBody">
+
+  <div class="promptEntry">
+
+  <div class="promptInput">
+
+    <input type="text" name="promptAnswer" value="" id="beatInput" class="formBorder" placeholder="Enter answer here">
+    <span class="focus-border">
+      <i></i>
+    </span>
+  </div>
+
+  <div class="promptSubmit">
+
+    <button type="button" name="beatInputSubmit" id="beatInputSubmit">Submit</button>
+  </div>
+
+  </div>
+</div>
 
 
-      <a href="/prompts.html"class="newPromptButton">next prompt</a>
+      <a href="/prompts.html"class="btn newPromptButton">next prompt</a>
     </div>
 
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>

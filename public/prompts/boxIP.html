@@ -9,15 +9,36 @@
  <!-- This is the interactive Prompt. You enter the answer here. -->
 
 <!-- as new inputs are added, ids are changed to reflect the prompt number -->
-<h1 class="prompt">You open a mysterious box.</h1>
+<div class="mainBody">
+
+<div class="mainContainer">
+
+
+  <div class="mainContent">
+  <h1 class="prompt">You open a mysterious box.</h1>
   <p>What do you find?</p>
-  <input type="text" name="promptAnswer" value="" id="boxInput" placeholder="Enter answer here">
-  <button type="button" name="boxInputSubmit" id="boxInputSubmit">Submit</button>
-    <div class="mainBody">
+  <div class="promptEntry">
 
+  <div class="promptInput">
 
-      <a href="/prompts.html"class="newPromptButton">next prompt</a>
+    <input type="text" name="promptAnswer" value="" id="beatInput" class="formBorder" placeholder="Enter answer here">
+    <span class="focus-border">
+      <i></i>
+    </span>
+  </div>
+
+  <div class="promptSubmit">
+
+    <button type="button" name="beatInputSubmit" id="beatInputSubmit">Submit</button>
+  </div>
+
+</div>
+</div>
+
+      <a href="/prompts.html"class="btn newPromptButton">next prompt</a>
     </div>
+  </div>
+</div>
 
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
     <script src="/js/main.js" charset="utf-8"></script>

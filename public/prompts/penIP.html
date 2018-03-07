@@ -8,16 +8,42 @@
   <body>
  <!-- This is the interactive Prompt. You enter the answer here. -->
 
-<!-- as new inputs are added, ids are changed to reflect the prompt number -->
-<h1 class="prompt">Give this penguin a name.</h1>
+<!-- as new inputs are added, ids are changed to reflect the prompt number --><div class="mainBody">
+<div class="img">
+
   <img src="/image/adelie.jpg" alt="adelie">
-  <input type="text" name="promptAnswer" value="" id="penInput" placeholder="Enter answer here">
-  <button type="button" name="penInputSubmit" id="penInputSubmit">Submit</button>
-    <div class="mainBody">
+</div>
+
+<div class="mainContainer">
 
 
-      <a href="/prompts.html"class="newPromptButton">next prompt</a>
+  <div class="mainContent">
+<h1 class="prompt">Give this penguin a name.</h1>
+
+  <div class="promptEntry">
+
+  <div class="promptInput">
+
+    <input type="text" name="promptAnswer" value="" id="beatInput" class="formBorder" placeholder="Enter answer here">
+    <span class="focus-border">
+      <i></i>
+    </span>
+  </div>
+
+  <div class="promptSubmit">
+
+    <button type="button" name="beatInputSubmit" id="beatInputSubmit">Submit</button>
+  </div>
+
+  </div>
+</div>
+
+
+
+      <a href="/prompts.html"class="btn newPromptButton">next prompt</a>
     </div>
+  </div>
+</div>
 
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
 

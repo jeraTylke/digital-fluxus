@@ -9,18 +9,36 @@
  <!-- This is the interactive Prompt. You enter the answer here. -->
 
 <!-- as new inputs are added, ids are changed to reflect the prompt number -->
+<div class="mainBody">
+
+<div class="mainContainer">
+
+
+  <div class="mainContent">
 <h1 class="prompt">Tell me your mood.</h1>
-<!-- <p>Tell me your mood.</p> -->
-  <input type="text" name="promptAnswer" value="" id="moodInput" placeholder="Enter answer here">
-  <button type="button" name="moodInputSubmit" id="moodInputSubmit">Submit</button>
-    <div class="mainBody">
 
+<div class="promptEntry">
 
-      <a href="/prompts.html"class="newPromptButton">next prompt</a>
+<div class="promptInput">
+
+  <input type="text" name="promptAnswer" value="" id="beatInput" class="formBorder" placeholder="Enter answer here">
+  <span class="focus-border">
+    <i></i>
+  </span>
+</div>
+
+<div class="promptSubmit">
+
+  <button type="button" name="beatInputSubmit" id="beatInputSubmit">Submit</button>
+</div>
+
+</div>
+</div>
+
+      <a href="/prompts.html"class="btn newPromptButton">next prompt</a>
     </div>
-    <div class="container">
-
-    </div>
+  </div>
+</div>
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
 
     <script src="/js/main.js" charset="utf-8"></script>
