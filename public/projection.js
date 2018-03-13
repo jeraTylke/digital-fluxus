@@ -6,7 +6,6 @@
 var socket = io.connect() // Connect to the server -- USE FOR LOCAL TESTING
 // var socket = io.connect('http://localhost:3000') // Connect to the server -- USE FOR LOCAL TESTING
 
-
 // Each one of these "socket.on"'s will exist for each prompt page.
 
 // listens for incoming message first, starts a function and sends a variable with the function.
@@ -52,8 +51,7 @@ $("#promptResponses").append('<p>'+ beatInputValue +'</p>')
 //tall giraffe
 //////////////
 socket.on('tallInputProjectionMessage', function(tallInputValue){
-$("#promptResponses").append('<p>'+ tallInputValue +'</p>')
-
+$("#promptResponses").append('<p>' +  'Are Giraffes Too Tall? - ' + tallInputValue +'</p>')
 })
 
 

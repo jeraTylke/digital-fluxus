@@ -9,16 +9,25 @@ html, body {box-sizing: border-box;margin: 0;padding: 0;}
   font-family: "Play", sans-serif;
 
 }
-.img{
-  display: block;
-  max-width:230px;
-  max-height:95px;
-  width: auto;
-  height: auto;
+.imageIP{
+  text-align: center;
+}
+
+.imageIP img {
+  max-width: 520px;
+  width: 100%;
 }
 
 .promptTitle {
   margin: 0px;
+}
+
+.prompt {
+  text-align: center;
+}
+
+.promptEntry {
+  text-align: center;
 }
 
 .promptSubmit {
@@ -43,14 +52,55 @@ html, body {box-sizing: border-box;margin: 0;padding: 0;}
 }
 .mainContent{
   color: white;
-  display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 60%;
-
 }
+
+.mainContent p{
+  text-align: center;
+  /*font-weight: bold;*/
+  color: white;
+  padding: 0 10px;
+  font-size: 18pt;
+  font-family: "Play",sans-serif;
+}
+
+.promptDescription {
+  height: auto;
+}
+
+.projectionContent {
+  color: #fff;
+  height: auto;
+}
+
+.projectionContent h1 {
+  margin: 0;
+  font-family: "Play", sans-serif;
+}
+
+.projectionContent p {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  text-align: left;
+  font-family: "Play", sans-serif;
+  font-size: 18pt;
+}
+
+.projectionBody {
+  background-color: #000;
+
+  /*BACKUP COLOR*/
+  /*background-color: #20ab8b; */
+}
+
+/*============*/
+/*===BUTTON===*/
+/*============*/
 
 .btn {
   appearance: none;
@@ -92,19 +142,6 @@ html, body {box-sizing: border-box;margin: 0;padding: 0;}
 .promptInput{
   display:inline-block;
   position: relative;
-}
-
-.mainContent p{
-  text-align: center;
-  /*font-weight: bold;*/
-  color: white;
-  padding: 0 10px;
-  font-size: 18pt;
-  font-family: "Play",sans-serif;
-}
-
-.promptDescription {
-  height: auto;
 }
 
 
@@ -180,3 +217,7 @@ input[type="text"] {
   height: 100%;
   transition: 0.4s;
 }
+
+/*================*/
+/*===END BUTTON===*/
+/*================*/
