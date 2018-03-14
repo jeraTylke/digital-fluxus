@@ -17,26 +17,26 @@ $("#promptResponses").append('<p>'+ testInput2Value +'</p>')
 
 //2 fave books
 socket.on('bookInputProjectionMessage', function(bookInputValue){
-$("#promptResponses").append('<p>'+ bookInputValue +'</p>')
+$("#promptResponses").append('<p>'+'Favorite Books - ' + bookInputValue +'</p>')
 
 })
 
 //modern art
 socket.on('modernInputProjectionMessage', function(modernInputValue){
-$("#promptResponses").append('<p>'+ modernInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'Modern Art - ' + modernInputValue +'</p>')
 
 })
 
 //mood
 socket.on('moodInputProjectionMessage', function(moodInputValue){
-$("#promptResponses").append('<p>'+ moodInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'What is your mood - ' + moodInputValue +'</p>')
 
 })
 
 //soup
 //////
 socket.on('soupInputProjectionMessage', function(soupInputValue){
-$("#promptResponses").append('<p>'+ soupInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'Soup - ' + soupInputValue +'</p>')
 
 })
 
@@ -44,7 +44,7 @@ $("#promptResponses").append('<p>'+ soupInputValue +'</p>')
 //beat
 //////
 socket.on('beatInputProjectionMessage', function(beatInputValue){
-$("#promptResponses").append('<p>'+ beatInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'Give me a beat - ' + beatInputValue +'</p>')
 
 })
 
@@ -58,28 +58,28 @@ $("#promptResponses").append('<p>' +  'Are Giraffes Too Tall? - ' + tallInputVal
 //box
 /////
 socket.on('boxInputProjectionMessage', function(boxInputValue){
-$("#promptResponses").append('<p>'+ boxInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'What is in box - ' + boxInputValue +'</p>')
 
 })
 
 //story
 ///////
 socket.on('storyInputProjectionMessage', function(storyInputValue){
-$("#promptResponses").append('<p>'+ storyInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'His Story - ' + storyInputValue +'</p>')
 
 })
 
 //penguin
 /////////
 socket.on('penInputProjectionMessage', function(penInputValue){
-$("#promptResponses").append('<p>'+ penInputValue +'</p>')
+$("#promptResponses").append('<p>'+'penguin name - ' + penInputValue +'</p>')
 
 })
 
 //nightmare
 ///////////
 socket.on('nightInputProjectionMessage', function(nightInputValue){
-$("#promptResponses").append('<p>'+ nightInputValue +'</p>')
+$("#promptResponses").append('<p>'+ 'Nightmare - ' + nightInputValue +'</p>')
 
 })
 

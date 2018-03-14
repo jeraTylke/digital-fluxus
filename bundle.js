@@ -32,10 +32,10 @@ var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','li
 
 for (var i = 0; i < interactivePrompts.length; i++) {
   if (url.indexOf(interactivePrompts[i]) > -1) {
-    var backgroundColors = ["rgb(190, 70, 102)"];
+    var backgroundColors = ["#9a455c","#321987","#233e5b","#aa6f44"];
     changeBackgroundColor(backgroundColors);
   } else if (url.indexOf(basicPrompts[i]) > -1) {
-    var backgroundColors = ["#ff0000","#00ff00","#0000ff"];
+    var backgroundColors = ["#249c98","#517bbb","#ff6300","#bd95a3", "#4fa85b"];
     changeBackgroundColor(backgroundColors);
   }
 }
