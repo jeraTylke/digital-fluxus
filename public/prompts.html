@@ -4,17 +4,12 @@
     <meta charset="utf-8">
     <title>Prompt Generator</title>
   </head>
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
   <body>
-<!-- If the site is working, this page shouldn't even appear -->
-
-  <div class="mainBody">
-  <div class="promptsContainer">
-
-  </div>
-  <button type="button" name="promptGenerator"id="promptGenerator">hila kleiners</button>
-
-  </div>
-
+    <div class="promptsBody">
+      <h1 id="loadingPrompt">Loading Prompt...</h1>
+      <a id="resetButton" href="/" class="btn start hidden">Click To Reset Prompts</a>
+    </div>
 
 
   <script src="https://cdn.socket.io/socket.io-1.4.5.js" charset="utf-8"></script>
@@ -22,8 +17,8 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="js/staging.js" charset="utf-8"></script>
-  <script src="js/bundle.js"></script>
+  <!-- <script src="js/staging.js" charset="utf-8"></script> -->
+  <script src="js/main.js"></script>
 
   </body>
 </html>

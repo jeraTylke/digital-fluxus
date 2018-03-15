@@ -8,6 +8,6 @@ var prompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.
   rand = Math.floor(Math.random()* prompts.length)
   // A random number is generated based off of how many prompts are in the array
 
-window.location.replace("prompts/" + prompts[rand]);
+// window.location.replace("prompts/" + prompts[rand]);
 
 // The window links to one of the randomly selected prompt pages.

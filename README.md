@@ -25,6 +25,9 @@ then
 
 **git push**
 
+to bundle, run this command in the terminal:
+**watchify bundle.js -o public/js/main.js -v**
+
 > Links/resources
 
 http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video

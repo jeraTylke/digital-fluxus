@@ -1,34 +1,132 @@
 // universal scripts -> gets loaded on every page
 /////////////////////////////////////////////////
 
-// to bundle, run this command in the terminal:
-// watchify bundle.js -o public/js/main.js -v
-
-
 // first, we require any modules or javascript libraries we need
-var cookies = require('js-cookie');
+var Cookies = require('js-cookie');
 var $ = require('jquery');
 window.$ = window.jQuery = $;
 
+
 // then, we include any of our own custom scripts
 var prompt = require('./public/js/prompt.js')
-var prompt = require('./public/js/interactivePrompt.js')
+var interactivePrompt = require('./public/js/interactivePrompt.js')
 
+/*
+=======================
+==UNIVERSAL VARIABLES==
+=======================
+*/
+var debug = false; //set console to debug
 
+var url = location.pathname;
 
+var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html'] //Each prompt is added to an array
+
+var backgroundColors = [];
+
+var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
+
+var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html']
 
 /*
 =====================
 ==UNIVERSAL SCRIPTS==
 =====================
 */
-var backgroundColors = [];
 
-var url = location.pathname;
+// used for removing items from arrays
 
-var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
+function removeArrayItem(arr) {
+    var what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while ((ax= arr.indexOf(what)) !== -1) {
+            arr.splice(ax, 1);
+        }
+    }
+    return arr;
+}
 
-var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html']
+
+// if on home page, reset all cookies to start fresh
+
+if(url == '/' || url == '/default.aspx'){
+  resetCookies();
+}
+
+// run the page checker
+pageChecker();
+
+
+function pageChecker(){
+  if(debug == true){console.log("Starting pageChecker()");}
+  if(debug == true){console.log("Here's the intial array = " + promptPages);}
+
+for (var i = promptPages.length - 1; i >= 0; i--) {
+  if(url.indexOf(promptPages[i]) > -1){
+    if(debug == true){console.log("set cookie = " + promptPages[i]);}
+    Cookies.set('visited_'+promptPages[i], true);
+  } else {
+    if(debug == true){console.log("no cookie set at " + url + " for " + promptPages[i] + " - not on this page.");}
+  }
+}
+if(debug == true){console.log("Ending pageChecker() - starting newPrompt()");}
+
+newPrompt();
+}
+
+/// STAGING "DICE ROLLER" CONTROLLER
+/////////////////////////////////////
+
+function newPrompt(){
+
+  if(debug == true){console.log("Starting newPrompt()");}
+
+  if(url.indexOf("prompts.html") > -1){
+
+// The key here is to loop BACKWARDS, as each time an object is spliced, the array is reindexed and length becomes obsolete
+    for (var i = promptPages.length - 1; i >= 0; i--) {
+      if (Cookies.get("visited_"+promptPages[i])) {
+        if(debug == true){console.log("removed cookie = " + promptPages[i]);}
+        removeArrayItem(promptPages, promptPages[i]);
+        if(debug == true){console.log(promptPages);}
+      }
+    }
+    if(debug == true){console.log("Starting promptGenerator()");}
+    promptGenerator();
+} else {
+  if(debug == true){console.log("ending newPrompt(), not on prompts.html page");}
+}
+
+} //end newPrompt()
+
+function promptGenerator() {
+  if(debug == true){console.log("promptGenerator() started");}
+  // This page randomly assigns a new prompt when someone is linked to it.
+  rand = Math.floor(Math.random()* promptPages.length)
+  if(debug == true){console.log("promptPages length = "+ promptPages.length);}
+  if(debug == true){console.log("Random number from available prompts is =  "+ rand);}
+  if(debug == true){console.log("visiting this page= " + promptPages[rand]);}
+  // A random number is generated based off of how many prompts are in the array
+
+  if (promptPages.length == 0) {
+    $("#loadingPrompt").text("All Prompts Have Been Finished!")
+    $("#resetButton").removeClass('hidden');
+  } else {
+    window.location.replace("prompts/" + promptPages[rand]);
+  }
+
+  // The window links to one of the randomly selected prompt pages.
+}
+
+
+function resetCookies(){
+    for (var i = 0; i < promptPages.length; i++) {
+      Cookies.remove('visited_'+promptPages[i]);
+    }
+}
+
+// BACKGROUND COLOR CHANGE
 
 for (var i = 0; i < interactivePrompts.length; i++) {
   if (url.indexOf(interactivePrompts[i]) > -1) {
@@ -43,14 +141,4 @@ for (var i = 0; i < interactivePrompts.length; i++) {
 function changeBackgroundColor(randomColors){
   var randColor = Math.floor(Math.random()* backgroundColors.length)
   $(".mainBody").css('background-color', randomColors[randColor]);
-
-}
-
-var promptPages = ["moodIP","color","nightIP"]
-
-for (var i = 0; i < promptPages.length; i++) {
-  if(url.indexOf(promptPages[i]) > -1){
-    console.log("Ayy this is "+promptPages[i]);
-
-  }
 }
