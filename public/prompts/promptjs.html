@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>FlowerPrompt</title>
+    <title>Page Title</title>
     <link rel="stylesheet" href="/css/prompt.css">
   </head>
   <body>
@@ -13,21 +13,23 @@
 
 
         <div class="mainContent">
-      <h1 class="prompt">Pen flowers</h1>
+          <div id="promptContainer">
 
-      <!-- Here's Where we can put the prompt itself -->
-      <p>Make a boquet of flowers with pens. Hand them to your partner.</p>
+          </div>
+      <h1 id="prompt" class="prompt"> </h1>
+      <p id="promptBody"> </p>
 
       <a href="/prompts.html"class="btn newPromptButton">next prompt</a>
       </div>
     </div>
   </div>
+
+
       <!-- This button links to our "dice roller" page, that then randomly serves a new prompt page -->
     </div>
-
-
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
 
     <script src="/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/resources/assets/js/prompts/promptjs.js" charset="utf-8"></script>
   </body>
 </html>
