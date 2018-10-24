@@ -156,4 +156,4 @@ $('#nightInputSubmit').on('click', function(event) {
 
 
 
-}) //END CONNECTION
+});//END CONNECTION

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Play:400,700');
+html, body {box-sizing: border-box;margin: 0;padding: 0; height: 100%;}
+*,*::before,*::after {box-sizing: inherit;}
+
+
+.mainBody {
+  min-height: 100vh;
+  background: black;
+  font-family: "Play", sans-serif;
+
+}
+.imageIP{
+  text-align: center;
+}
+
+.imageIP img {
+  max-width: 520px;
+  width: 100%;
+}
+
+.promptTitle {
+  margin: 0px;
+}
+
+.prompt {
+  text-align: center;
+}
+
+.promptEntry {
+  text-align: center;
+}
+
+.promptSubmit {
+  display: inline-block;
+}
+/*.fluxusLogo{
+  border: 1px dashed green;
+  min-height: 200px;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  width: 100%;
+}*/
+video#fluxusLogo {
+  position: relative;
+  min-width: 30%;
+  width: 58%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* min-height: 100%; */
+  /* justify-content: center; */
+  /* z-index: -100; */
+  /*-ms-transform: translateX(-50%) translateY(-50%);*/
+  /*-moz-transform: translateX(-50%) translateY(-50%);*/
+  /* -webkit-transform: translateX(-50%) translateY(-50%); */
+  /* transform: translateX(-50%) translateY(-50%); */
+  /* background-size: cover; */
+}
+
+.mainContainer {
+  height: 100%;
+  /*height: 100vh;*/
+  /*max-width: 1300px;*/
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainContainer.home {
+  height: auto;
+}
+.mainContent{
+  color: white;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+
+.mainContent p{
+  text-align: center;
+  /*font-weight: bold;*/
+  color: white;
+  padding: 0 10px;
+  font-size: 18pt;
+  font-family: "Play",sans-serif;
+}
+
+.promptDescription {
+  height: auto;
+}
+
+.projectionContent {
+  color: #fff;
+  height: auto;
+}
+
+.projectionContent h1 {
+  margin: 0;
+  font-family: "Play", sans-serif;
+}
+
+.projectionContent p {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  text-align: left;
+  font-family: "Play", sans-serif;
+  font-size: 18pt;
+}
+
+.projectionBody {
+  background-color: #000;
+
+  /*BACKUP COLOR*/
+  /*background-color: #20ab8b; */
+}
+
+.promptsBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  background-color: #233e5b;
+  font-family: "Play",sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+.promptInput{
+  display:inline-block;
+  position: relative;
+}
+
+
+
+/* necessary to give position: relative to parent. */
+
+input[type="text"] {
+  font: 15px/24px 'Muli', sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+:focus {
+  outline: none;
+}
+
+
+/* necessary to give position: relative to parent. */
+
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+
+.formBorder~.focus-border:before, .formBorder~.focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: $light-cyan;
+  transition: 0.3s;
+}
+
+.formBorder~.focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+.formBorder~.focus-border i:before, .formBorder~.focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: $light-cyan;
+  transition: 0.4s;
+}
+
+.formBorder~.focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.formBorder:focus~.focus-border:before, .formBorder:focus~.focus-border:after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.formBorder:focus~.focus-border i:before, .formBorder:focus~.focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+/*================*/
+/*===END BUTTON===*/
+/*================*/

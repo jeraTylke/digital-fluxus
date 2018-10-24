@@ -1,0 +1,39 @@
+{
+  "prompts": [
+    {
+      "id": "mood",
+      "title": "Mood Prompt",
+      "type": "int",
+      "prompt": "Tell me your mood.",
+      "body": ""
+    },
+    {
+      "id": "book",
+      "title": "Book Prompt",
+      "type": "int",
+      "prompt": "Favorite Books",
+      "body": "Tell me two of your favorite books. Send it to me."
+    },
+    {
+      "id": "flowers",
+      "title": "2Flowers",
+      "type": "nonint",
+      "prompt": "Pen flowers",
+      "body": "Make a bouquet of flowers with pens. Hand them to your partner."
+    },
+    {
+      "id": "lemons",
+      "title": "Life Gives Lemons",
+      "type": "nonint",
+      "prompt": "Draw some lemons",
+      "body": "Draw them on a piece of paper. Give that drawing to somebody. Tell them, \"Life gave you lemons\" "
+    },
+    {
+      "id": "stuff",
+      "title": "Stuff and things",
+      "type": "nonint",
+      "prompt": "Cool stuff dawg",
+      "body": "🤠 🤠 🤠 🤠 🤠 🤠 🤠"
+    }
+  ]
+}

@@ -26,8 +26,13 @@ then
 **git push**
 
 to bundle, run this command in the terminal:
-**watchify bundle.js -o public/js/main.js -v**
+``npm run build``
 
-> Links/resources
+While writing code, run this command in the terminal and Webpack will track changes and build as required. (If css changes aren't happening, run this to fix those)
+
+``npm run watch``
+and press **Ctrl+C** to stop watching.
+
+# Links/resources
 
 http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video

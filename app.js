@@ -97,8 +97,4 @@ socket.on('nightInputMessage', function(nightInputData){
 
 
 
-
-
-
-
 }) //END SERVER FUNCTIONS
