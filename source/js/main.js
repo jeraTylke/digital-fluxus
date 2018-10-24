@@ -4,7 +4,6 @@
 
 // first, we require any modules or javascript libraries we need
 
-import Data from '../data/prompts.json';
 import Cookies from 'js-cookie';
 import $ from 'jquery';
 window.$ = window.jQuery = $;
@@ -22,13 +21,13 @@ var debug = false; //set console to debug
 
 var url = location.pathname;
 
-var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html'] //Each prompt is added to an array
+var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html']; //Each prompt is added to an array
 
 var backgroundColors = [];
 
 var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
 
-var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html']
+var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html'];
 
 /*
 =====================
@@ -105,7 +104,7 @@ function newPrompt(){
 function promptGenerator() {
     if(debug == true){console.log("promptGenerator() started");}
     // This page randomly assigns a new prompt when someone is linked to it.
-    rand = Math.floor(Math.random()* promptPages.length)
+    var rand = Math.floor(Math.random()* promptPages.length)
     if(debug == true){console.log("promptPages length = "+ promptPages.length);}
     if(debug == true){console.log("Random number from available prompts is =  "+ rand);}
     if(debug == true){console.log("visiting this page= " + promptPages[rand]);}

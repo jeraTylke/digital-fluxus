@@ -29,11 +29,186 @@
       "body": "Draw them on a piece of paper. Give that drawing to somebody. Tell them, \"Life gave you lemons\" "
     },
     {
-      "id": "stuff",
-      "title": "Stuff and things",
+      "id": "spirit",
+      "title": "Spirit Animals",
       "type": "nonint",
-      "prompt": "Cool stuff dawg",
-      "body": "🤠 🤠 🤠 🤠 🤠 🤠 🤠"
+      "prompt": "Spirit Animals",
+      "body": "Draw your spirit animal on a small piece of paper. Pass it to the person to the left of you."
+    },
+    {
+      "id": "number",
+      "title": "Thoughtful Numbers",
+      "type": "nonint",
+      "prompt": "Think of a number",
+      "body": "Say it out loud."
+    },
+    {
+      "id": "migrate",
+      "title": "Migration Station",
+      "type": "nonint",
+      "prompt": "Migrate",
+      "body": "Migrate to the middle of the room. Stay there until further notice."
+    },
+    {
+      "id": "Phrase",
+      "title": "Phrase Craze",
+      "type": "nonint",
+      "prompt": "Favorite Phrase",
+      "body": "Write your favorite phrase on a piece of paper. Put it in the jar that's on the stage."
+    },
+    {
+      "id": "Memory",
+      "title": "Memory",
+      "type": "int",
+      "prompt": "Memories",
+      "body": "Give me one sentence about your happiest memory."
+    },
+    {
+      "id": "shake",
+      "title": "Shake Hands",
+      "type": "nonint",
+      "prompt": "Shake",
+      "body": "Shake hands with one of the presenters."
+    },
+    {
+      "id": "light",
+      "title": "light",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Turn off a light. Turn it back on."
+    },
+    {
+      "id": "modern",
+      "title": "modern art",
+      "type": "int",
+      "prompt": "",
+      "body": "What do you think of modern art?"
+    },
+    {
+      "id": "box",
+      "title": "Box",
+      "type": "int",
+      "prompt": "",
+      "body": "You open a box. What's in it?"
+    },
+    {
+      "id": "nightmare",
+      "title": "nightmare",
+      "type": "int",
+      "prompt": "",
+      "body": "When was the last time you had a nightmare?"
+    },
+    {
+      "id": "drum",
+      "title": "drum",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Drum roll some pens."
+    },
+    {
+      "id": "emotion",
+      "title": "emotion",
+      "type": "int",
+      "prompt": "[image here]",
+      "body": "What emotion does this image give you?"
+    },
+    {
+      "id": "rumor",
+      "title": "rumor",
+      "type": "int",
+      "prompt": "",
+      "body": "Have you heard of the rumor?"
+    },
+    {
+      "id": "stage",
+      "title": "stage",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Walk across the stage to the center. Pose as your favorite sculpture."
+    },
+    {
+      "id": "door",
+      "title": "door",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Knock on a door."
+    },
+    {
+      "id": "time",
+      "title": "time",
+      "type": "int",
+      "prompt": "",
+      "body": "Describe time in one sentence."
+    },
+    {
+      "id": "pet",
+      "title": "pet",
+      "type": "int",
+      "prompt": "",
+      "body": "What is the last thing you said to your pet?"
+    },
+    {
+      "id": "year",
+      "title": "year",
+      "type": "int",
+      "prompt": "",
+      "body": "What common phrase describes your year?"
+    },
+    {
+      "id": "haiku",
+      "title": "haiku",
+      "type": "int",
+      "prompt": "Finish this Haiku:",
+      "body": "Autumn so fleeting. Ascending mental Reverb. ________."
+    },
+    {
+      "id": "mind",
+      "title": "mind",
+      "type": "int",
+      "prompt": "",
+      "body": "What is never in your mind?"
+    },
+    {
+      "id": "barter",
+      "title": "barter",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Barter with somebody near you."
+    },
+    {
+      "id": "giraffe",
+      "title": "giraffe",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Discuss with anyone about the possibility of giraffes being too tall"
+    },
+    {
+      "id": "portrait",
+      "title": "portrait",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Get someone to draw your portrait."
+    },
+    {
+      "id": "realize",
+      "title": "realize",
+      "type": "int",
+      "prompt": "",
+      "body": "What is your latest realization?"
+    },
+    {
+      "id": "fear",
+      "title": "fear",
+      "type": "int",
+      "prompt": "",
+      "body": "Write an irrational fear."
+    },
+    {
+      "id": "decade",
+      "title": "decade",
+      "type": "int",
+      "prompt": "",
+      "body": "Describe one   decade."
     }
   ]
 }

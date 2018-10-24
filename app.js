@@ -33,6 +33,9 @@ io.on('connect', function(socket){
     io.emit('testInput2ProjectionMessage',testInput2Data)
   })
 
+//TODO replace with for/loop concatenating the json-provided ids as the prefixes of 'Message' and 'ProjectionMessage'
+// socket.on(promptData[i].id + 'Message',);
+
 
 //2 fave books
   socket.on('bookInputMessage', function(bookInputData){
