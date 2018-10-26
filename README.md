@@ -33,6 +33,23 @@ While writing code, run this command in the terminal and Webpack will track chan
 ``npm run watch``
 and press **Ctrl+C** to stop watching.
 
+
+
+# 📋 Changelog
+
+Version 2.0 -
+
+Version 1.1 -
+
+Version 1.0 -
+
+# ⌚ Future Plans
+
+Version 3.0 - Conversion to Vue.js app for frontend GUI to control prompts.
+
+
+
+
 # Links/resources
 
 http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video
