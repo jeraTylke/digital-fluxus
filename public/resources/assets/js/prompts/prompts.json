@@ -29,6 +29,13 @@
       "body": "Draw them on a piece of paper. Give that drawing to somebody. Tell them, \"Life gave you lemons\" "
     },
     {
+      "id": "stuff",
+      "title": "Stuff and things",
+      "type": "nonint",
+      "prompt": "Cool stuff dawg, DELETE ME LATER",
+      "body": "🤠 🤠 🤠 🤠 🤠 🤠 🤠"
+    },
+    {
       "id": "spirit",
       "title": "Spirit Animals",
       "type": "nonint",
@@ -50,14 +57,14 @@
       "body": "Migrate to the middle of the room. Stay there until further notice."
     },
     {
-      "id": "phrase",
+      "id": "Phrase",
       "title": "Phrase Craze",
       "type": "nonint",
       "prompt": "Favorite Phrase",
       "body": "Write your favorite phrase on a piece of paper. Put it in the jar that's on the stage."
     },
     {
-      "id": "memory",
+      "id": "Memory",
       "title": "Memory",
       "type": "int",
       "prompt": "Memories",
@@ -208,7 +215,7 @@
       "title": "decade",
       "type": "int",
       "prompt": "",
-      "body": "Describe one   decade."
+      "body": "Describe one decade."
     }
   ]
 }

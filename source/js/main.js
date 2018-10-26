@@ -17,17 +17,18 @@ window.$ = window.jQuery = $;
 ==UNIVERSAL VARIABLES==
 =======================
 */
-var debug = false; //set console to debug
+var debug = true; //set console to debug
 
 var url = location.pathname;
 
-var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html']; //Each prompt is added to an array
+// var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html']; //Each prompt is added to an array
 
 var backgroundColors = [];
 
-var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
+// var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
 
-var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html'];
+// var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html'];
+
 
 /*
 =====================
@@ -61,7 +62,7 @@ pageChecker();
 
 function pageChecker(){
     if(debug == true){console.log("Starting pageChecker()");}
-    if(debug == true){console.log("Here's the intial array = " + promptPages);}
+    if(debug == true){console.log("Here's the initial array = " + promptPages);}
 
     for (var i = promptPages.length - 1; i >= 0; i--) {
         if(url.indexOf(promptPages[i]) > -1){
