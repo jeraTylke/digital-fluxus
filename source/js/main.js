@@ -21,13 +21,13 @@ var debug = true; //set console to debug
 
 var url = location.pathname;
 
-// var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html']; //Each prompt is added to an array
+var promptPages = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html', 'bookIP.html', 'modernIP.html','moodIP.html', 'beatIP.html', 'tallIP.html','storyIP.html','penIP.html', 'nightIP.html']; //Each prompt is added to an array
 
 var backgroundColors = [];
 
-// var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
+var interactivePrompts = ["bookIP.html","modernIP.html","moodIP.html","beatIP.html","storyIP.html","penIP.html","nightIP.html"];
 
-// var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html'];
+var basicPrompts = ['flowers.html','jump.html','shakeHands.html','race.html','lights.html','lemons.html','happen.html','time.html','floor.html','eyes.html','color.html','drums.html'];
 
 
 /*
