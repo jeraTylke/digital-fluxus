@@ -50,14 +50,14 @@
       "body": "Migrate to the middle of the room. Stay there until further notice."
     },
     {
-      "id": "Phrase",
+      "id": "phrase",
       "title": "Phrase Craze",
       "type": "nonint",
       "prompt": "Favorite Phrase",
       "body": "Write your favorite phrase on a piece of paper. Put it in the jar that's on the stage."
     },
     {
-      "id": "Memory",
+      "id": "memory",
       "title": "Memory",
       "type": "int",
       "prompt": "Memories",
