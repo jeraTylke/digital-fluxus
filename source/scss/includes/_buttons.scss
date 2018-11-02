@@ -22,6 +22,10 @@
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Play";
+  &.small {
+    padding: 0.2em 1.8em;
+    margin: 20px auto;
+  }
 }
 .btn:hover, .btn:focus {
   color: #fff;

@@ -6,3 +6,16 @@
   opacity: 1;
   pointer-events: all;
 }
+
+#promptImage {
+  opacity: 0;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
+  &.active {
+    opacity: 1;
+  }
+}
+
+
