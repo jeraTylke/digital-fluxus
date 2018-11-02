@@ -56,8 +56,12 @@ if(url == '/' || url == '/default.aspx'){
     resetCookies();
 }
 
+$(document).ready(function() {
 // run the page checker
-pageChecker();
+    pageChecker();
+};
+
+
 
 
 function pageChecker(){

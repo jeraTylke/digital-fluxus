@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
+    target: 'node',
     entry: {
         main: ['./source/js/promptGenerator.js', './source/scss/app.scss']
         // main: ['./source/js/main.js', './source/js/prompt.js','./source/js/interactivePrompt.js', './source/js/promptGenerator.js', './source/scss/app.scss']
