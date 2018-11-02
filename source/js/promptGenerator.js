@@ -18,8 +18,8 @@ var isPromptFinished;
 
 
 // OPTIONS
-var promptSeconds = 2; //how long to wait until prompt shows up in seconds.
-var debug = true;
+var promptSeconds = 10; //how long to wait until prompt shows up in seconds.
+var debug = false;
 
 /*
 =====================
