@@ -13,11 +13,12 @@ var availablePrompts = promptData;
 var currentPrompt;
 var currentPromptData;
 var isInteractivePrompt;
+var isImagePrompt;
 var isPromptFinished;
 
 
 // OPTIONS
-var promptSeconds = 3; //how long to wait until prompt shows up in seconds.
+var promptSeconds = 2; //how long to wait until prompt shows up in seconds.
 var debug = true;
 
 /*
@@ -71,7 +72,7 @@ function resetCookies(){
 // START RUNNING SCRIPTS
 /////////////////////////
 $(document).ready(function() {
-    console.log("Load Page");
+    if(debug===true)console.log("Load Page");
     isPromptFinished = true;
     pageChecker();
 });
@@ -140,6 +141,8 @@ function newPrompt() {
             console.log("All Prompts Have Been Finished!");
             $("#prompt").html("All Prompts Have Been Finished!");
             $("#subPrompt").html(" ");
+            $("#promptFinished").text("Restart");
+            $("#promptFinished").attr("href", "/");
         } else{
             if (debug === true) {console.log("Starting promptGenerator()");}
             isPromptFinished = false;
@@ -168,18 +171,24 @@ function promptGenerator() {
     } else {
         isInteractivePrompt = false;
     }
+    if (availablePrompts[rand].hasImage === true){
+        isImagePrompt = true;
+    } else {
+        isImagePrompt = false;
+    }
 
     if(debug === true){console.log("current prompt is = " + currentPrompt);}
     if(debug === true){console.log("availablePrompts length = "+ availablePrompts.length);}
     if(debug === true){console.log("Random number from available prompts is =  " + rand);}
     if(debug === true){console.log("current prompt generated= " + availablePrompts[rand].id);}
     if(debug === true){console.log("Is it an interactive prompt? " + isInteractivePrompt)}
+    if(debug === true){console.log("Is it an image prompt? " + isImagePrompt)}
     // A random number is generated based off of how many prompts are in the array
 
     if (availablePrompts.length === 0) {
         if(debug === true)console.log("Finished!");
     } else {
-        if(currentUrl === '/prompttest.html') {
+        if(currentUrl === '/prompt.html') {
             renderPrompt(currentPromptData, currentPrompt);
         } else {
             if(debug === true)console.log("On Home Page");
@@ -193,13 +202,28 @@ function promptGenerator() {
 //////////////////////////////////
 
 function renderPrompt(currentPrompt){
+    var socket = io.connect();
+
+    socket.on('connect', function(data){
+        if(debug===true)console.log("Connected to server");
+
     changeBackgroundColor();
-    console.log("Rendering Prompt!");
-    if(debug == true)console.log("Rendered Prompt = " + currentPrompt.id );
-    if(debug == true)console.log(currentPromptData);
+
+    if(debug === true)console.log("Rendering Prompt!");
+    if(debug === true)console.log("Rendered Prompt = " + currentPrompt.id );
+    if(debug === true)console.log(currentPromptData);
     $('#prompt').html(currentPrompt.prompt);
     $('#subPrompt').html(currentPrompt.body);
     $('#promptType').html(currentPrompt.type);
+
+        if(currentPrompt.hasImage === true){
+            $("#promptImage").addClass("active");
+            $("#promptImage").attr('src', currentPrompt.image);
+        } else {
+            $("#promptImage").removeClass("active");
+            $("#promptImage").attr('src', "");
+
+        }
 
     if(currentPrompt.type === "int"){
         $(".interactiveInput").addClass("active").attr('id', currentPrompt.id + "Input");
@@ -209,29 +233,31 @@ function renderPrompt(currentPrompt){
 
 
 
-        var socket = io.connect();
-        socket.on('connect', function(data){
-            console.log("Connected to server?");
-            var inputValue;
 
-            $("#"+currentPrompt.id+"InputSubmit").on('click', function(event) {
-                inputValue = $("#"+currentPrompt.id+"Input").val();
 
-                // $(this).prop('disabled', 'true');
+        $("#"+currentPrompt.id+"InputSubmit").on('click', function(e) {
+
+
+            var inputValue = $("#"+currentPrompt.id+"Input").val();
+
+                if(debug===true)console.log(inputValue);
+
+                $(this).prop('disabled', 'true');
                 $('.newPromptButton').addClass('active');
 
-                console.log("#" + $(this)["0"].id + " button clicked!");
-                console.log($("#"+currentPrompt.id+"Input"));
+                if(debug===true)console.log("#" + $(this)["0"].id + " button clicked!");
+                if(debug===true)console.log($("#"+currentPrompt.id+"Input"));
 
 
-                console.log("Sending "+ inputValue);
+                if(debug===true)console.log("Sending "+ inputValue);
 
-                socket.emit('inputMessage', inputValue);
+                if(inputValue !== "undefined" || inputValue !== "" || inputValue !== "null") {
+                    socket.emit('inputMessage', inputValue);
+                }
 
             }); //click
 
 
-        })//end connection
 
         } else {
         $(".inputSubmit").removeClass("active");
@@ -239,15 +265,16 @@ function renderPrompt(currentPrompt){
         nextPromptTimer(currentPrompt);
     }
 
+    })//end connection
 
 
-}
+};
 
 function nextPromptTimer(currentPrompt) {
 
 // Ensure button doesn't appear from timer on non-interactive prompts
         setTimeout(function () {
             $(".newPromptButton").addClass('active');
-            console.log("Show button!")
+            if(debug===true)console.log("Show button!");
         }, promptSeconds * 1000);
 }

@@ -8,5 +8,9 @@ var socket = io.connect(); // Connect to the server -- USE FOR LOCAL TESTING
 
 
 socket.on('inputProjectionMessage', function(InputRender){
-    $("#promptResponses").append('<p>' + InputRender +'</p>')
+    if ( InputRender.length ) {
+        $("#promptResponses").append('<p>' + InputRender + '</p>')
+    }
+    $('html, body').animate({ scrollTop: $(document).height() }, 1400);
+    return false;
 });

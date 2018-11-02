@@ -88,7 +88,7 @@ function newPrompt(){
 
     if(debug == true){console.log("Starting newPrompt()");}
 
-    if(url.indexOf("prompts.html") > -1){
+    if(url.indexOf("promptsOLD.html") > -1){
 
 // The key here is to loop BACKWARDS, as each time an object is spliced, the array is reindexed and length becomes obsolete
         for (var i = promptPages.length - 1; i >= 0; i--) {
@@ -101,7 +101,7 @@ function newPrompt(){
         if(debug == true){console.log("Starting promptGenerator()");}
         promptGenerator();
     } else {
-        if(debug == true){console.log("ending newPrompt(), not on prompts.html page");}
+        if(debug == true){console.log("ending newPrompt(), not on promptsOLD.html page");}
     }
 
 } //end newPrompt()
