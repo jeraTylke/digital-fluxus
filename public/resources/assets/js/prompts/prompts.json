@@ -1,25 +1,11 @@
 {
   "prompts": [
     {
-      "id": "mood",
-      "title": "Mood Prompt",
-      "type": "int",
-      "prompt": "Tell me your mood.",
-      "body": ""
-    },
-    {
-      "id": "book",
-      "title": "Book Prompt",
-      "type": "int",
-      "prompt": "Favorite Books",
-      "body": "Tell me two of your favorite books. Send it to me."
-    },
-    {
       "id": "flowers",
-      "title": "2Flowers",
+      "title": "Flowers",
       "type": "nonint",
-      "prompt": "Pen flowers",
-      "body": "Make a bouquet of flowers with pens. Hand them to your partner."
+      "prompt": "Pen Flowers",
+      "body": "Make a bouquet of flowers with pens. Hand them to somebody."
     },
     {
       "id": "lemons",
@@ -29,18 +15,11 @@
       "body": "Draw them on a piece of paper. Give that drawing to somebody. Tell them, \"Life gave you lemons\" "
     },
     {
-      "id": "stuff",
-      "title": "Stuff and things",
+      "id": "animal",
+      "title": "animals",
       "type": "nonint",
-      "prompt": "Cool stuff dawg, DELETE ME LATER",
-      "body": "🤠 🤠 🤠 🤠 🤠 🤠 🤠"
-    },
-    {
-      "id": "spirit",
-      "title": "Spirit Animals",
-      "type": "nonint",
-      "prompt": "Spirit Animals",
-      "body": "Draw your spirit animal on a small piece of paper. Pass it to the person to the left of you."
+      "prompt": "Animals",
+      "body": "Sound like a farm animal."
     },
     {
       "id": "number",
@@ -50,25 +29,11 @@
       "body": "Say it out loud."
     },
     {
-      "id": "migrate",
-      "title": "Migration Station",
+      "id": "Cliche",
+      "title": "Common Cliche",
       "type": "nonint",
-      "prompt": "Migrate",
-      "body": "Migrate to the middle of the room. Stay there until further notice."
-    },
-    {
-      "id": "Phrase",
-      "title": "Phrase Craze",
-      "type": "nonint",
-      "prompt": "Favorite Phrase",
-      "body": "Write your favorite phrase on a piece of paper. Put it in the jar that's on the stage."
-    },
-    {
-      "id": "Memory",
-      "title": "Memory",
-      "type": "int",
-      "prompt": "Memories",
-      "body": "Give me one sentence about your happiest memory."
+      "prompt": "Favorite Cliche",
+      "body": "Say out loud a common cliche."
     },
     {
       "id": "shake",
@@ -99,13 +64,6 @@
       "body": "You open a box. What's in it?"
     },
     {
-      "id": "nightmare",
-      "title": "nightmare",
-      "type": "int",
-      "prompt": "",
-      "body": "When was the last time you had a nightmare?"
-    },
-    {
       "id": "drum",
       "title": "drum",
       "type": "nonint",
@@ -120,74 +78,32 @@
       "body": "What emotion does this image give you?"
     },
     {
-      "id": "rumor",
-      "title": "rumor",
-      "type": "int",
-      "prompt": "",
-      "body": "Have you heard of the rumor?"
-    },
-    {
       "id": "stage",
       "title": "stage",
       "type": "nonint",
       "prompt": "",
-      "body": "Walk across the stage to the center. Pose as your favorite sculpture."
+      "body": "Announce a time to your peers around you."
     },
     {
       "id": "door",
       "title": "door",
       "type": "nonint",
-      "prompt": "",
+      "prompt": "Knock Knock",
       "body": "Knock on a door."
-    },
-    {
-      "id": "time",
-      "title": "time",
-      "type": "int",
-      "prompt": "",
-      "body": "Describe time in one sentence."
-    },
-    {
-      "id": "pet",
-      "title": "pet",
-      "type": "int",
-      "prompt": "",
-      "body": "What is the last thing you said to your pet?"
-    },
-    {
-      "id": "year",
-      "title": "year",
-      "type": "int",
-      "prompt": "",
-      "body": "What common phrase describes your year?"
-    },
-    {
-      "id": "haiku",
-      "title": "haiku",
-      "type": "int",
-      "prompt": "Finish this Haiku:",
-      "body": "Autumn so fleeting. Ascending mental Reverb. ________."
-    },
-    {
-      "id": "mind",
-      "title": "mind",
-      "type": "int",
-      "prompt": "",
-      "body": "What is never in your mind?"
     },
     {
       "id": "barter",
       "title": "barter",
       "type": "nonint",
       "prompt": "",
-      "body": "Barter with somebody near you."
+      "body": "Trade with somebody near you for their markers."
     },
     {
       "id": "giraffe",
       "title": "giraffe",
-      "type": "nonint",
-      "prompt": "",
-      "body": "Discuss with anyone about the possibility of giraffes being too tall"
+      "type": "int",
+      "prompt": "Too tall?",
+      "body": "Are Giraffes TOO tall?"
     },
     {
       "id": "portrait",
@@ -197,25 +113,54 @@
       "body": "Get someone to draw your portrait."
     },
     {
-      "id": "realize",
-      "title": "realize",
+      "id": "penguin",
+      "title": "penguinName",
       "type": "int",
-      "prompt": "",
-      "body": "What is your latest realization?"
+      "prompt": "Name?",
+      "body": "This penguins name is PUT IMAGE HERE"
     },
     {
-      "id": "fear",
-      "title": "fear",
-      "type": "int",
+      "id": "color",
+      "title": "ickyColor",
+      "type": "nonint",
       "prompt": "",
-      "body": "Write an irrational fear."
+      "body": "Say out loud your least favorite color."
     },
     {
-      "id": "decade",
-      "title": "decade",
+      "id": "painting",
+      "title": "painting",
       "type": "int",
       "prompt": "",
-      "body": "Describe one decade."
+      "body": "There's a painting on the wall. What is it?"
     },
+    {
+      "id": "spin",
+      "title": "spin",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Spin in a circle 5 times."
+    },
+    {
+      "id": "greet",
+      "title": "greet",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Greet somebody as if they are the Queen."
+    },
+    {
+      "id": "autograph",
+      "title": "autograph",
+      "type": "nonint",
+      "prompt": "",
+      "body": "You're a celebrity. Give somebody your autograph."
+    },
+    {
+      "id": "sun",
+      "title": "Sun",
+      "type": "nonint",
+      "prompt": "",
+      "body": "You are the sun. Announce it."
+    },
+
   ]
 }
