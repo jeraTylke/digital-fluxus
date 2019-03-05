@@ -1,0 +1,22 @@
+.newPromptButton {
+  opacity: 0;
+  pointer-events: none;
+}
+.newPromptButton.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+#promptImage {
+  opacity: 0;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
+  &.active {
+    opacity: 1;
+    max-height: 0 !important;
+  }
+}
+
+

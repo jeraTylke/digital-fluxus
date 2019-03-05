@@ -1,0 +1,149 @@
+// INTERACTIVE PROMPT CONTROLLER
+/////////////////////////////////
+
+// This page handles the interactive prompt submission pages
+
+console.log("🐋");
+
+var socket = io.connect();
+
+socket.on('connect', function(data){
+
+
+//2 fav books
+/////////////
+$('#bookInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var bookInputValue = $('#bookInput').val();
+
+  socket.emit('bookInputMessage', bookInputValue)
+});
+
+
+
+//modern Art
+/////////////
+
+$('#modernInputSubmit').on('click', function(event) {
+  console.log("Modern submit clicked");
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active');
+
+  var modernInputValue = $('#modernInput').val();
+  console.log("Sending "+ modernInputValue);
+
+  socket.emit('modernInputMessage', modernInputValue)
+});
+
+// mood
+///////
+$('#moodInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var moodInputValue = $('#moodInput').val();
+
+  socket.emit('moodInputMessage', moodInputValue)
+});
+
+
+//soup
+//////
+$('#soupInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var soupInputValue = $('#soupInput').val();
+
+  socket.emit('soupInputMessage', soupInputValue)
+});
+
+//beat
+//////
+$('#beatInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var beatInputValue = $('#beatInput').val();
+
+  socket.emit('beatInputMessage', beatInputValue)
+});
+
+//tall giraffe
+//////
+$('#tallInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var tallInputValue = $('#tallInput').val();
+
+  socket.emit('tallInputMessage', tallInputValue)
+});
+
+
+//box
+/////
+$('#boxInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var boxInputValue = $('#boxInput').val();
+
+  socket.emit('boxInputMessage', boxInputValue)
+});
+
+//story
+///////
+$('#storyInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var storyInputValue = $('#storyInput').val();
+
+  socket.emit('storyInputMessage', storyInputValue)
+});
+
+//penguin
+/////////
+$('#penInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var penInputValue = $('#penInput').val();
+
+  socket.emit('penInputMessage', penInputValue)
+});
+
+//nightmare
+///////////
+$('#nightInputSubmit').on('click', function(event) {
+  event.preventDefault();
+  $(this).prop('disabled', 'true')
+  $('.newPromptButton').addClass('active')
+
+  var nightInputValue = $('#nightInput').val();
+
+  socket.emit('nightInputMessage', nightInputValue)
+});
+
+
+
+
+
+
+
+
+
+
+});//END CONNECTION

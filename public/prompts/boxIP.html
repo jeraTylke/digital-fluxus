@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Mysterious Box</title>
-    <link rel="stylesheet" href="/css/prompt.css">
-  </head>
-  <body>
- <!-- This is the interactive Prompt. You enter the answer here. -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<!-- This is the interactive Prompt. You enter the answer here. -->
 
 <!-- as new inputs are added, ids are changed to reflect the prompt number -->
 <div class="mainBody">
 
-<div class="mainContainer">
+    <div class="mainContainer">
 
 
-  <div class="mainContent">
-  <h1 class="prompt">You open a mysterious box.</h1>
-  <p>What do you find?</p>
-  <div class="promptEntry">
+        <div class="mainContent">
+            <h1 class="prompt">You open a mysterious box.</h1>
+            <p>What do you find?</p>
+            <div class="promptEntry">
 
-  <div class="promptInput">
+                <div class="promptInput">
 
-    <input type="text" name="promptAnswer" value="" id="boxInput" class="formBorder" placeholder="Enter answer here">
-    <span class="focus-border">
+                    <input type="text" name="promptAnswer" value="" id="boxInput" class="formBorder"
+                           placeholder="Enter answer here">
+                    <span class="focus-border">
       <i></i>
     </span>
-  </div>
+                </div>
 
-  <div class="promptSubmit">
+                <div class="promptSubmit">
+                    <button type="button" name="boxInputSubmit" id="boxInputSubmit">Submit</button>
+                </div>
 
-    <button type="button" name="boxInputSubmit" id="boxInputSubmit">Submit</button>
-  </div>
+            </div>
+        </div>
 
-</div>
-</div>
-
-      <a href="/prompts.html"class="btn newPromptButton">next prompt</a>
+        <a href="/prompts.html" class="btn newPromptButton">next prompt</a>
     </div>
-  </div>
 </div>
 
-    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
-    <script src="/js/main.js" charset="utf-8"></script>
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+<script src="/js/main.js" charset="utf-8"></script>
 
-  </body>
+</body>
 </html>

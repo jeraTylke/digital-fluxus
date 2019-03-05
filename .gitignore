@@ -60,3 +60,6 @@ typings/
 
 # MacOS files
 .DS_Store
+
+#IntelliJ Files
+.idea/workspace.xml

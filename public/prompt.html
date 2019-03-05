@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Digital Fluxus</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="mainBody">
+    <div class="mainContainer home">
+        <div>
+
+        </div>
+        <div class="mainContent">
+            <div id="promptContainer"></div>
+
+            <!--<a href="/" id="resetCookies">Reset Cookies</a>-->
+            <!--<button class="promptFinished">Done with prompt now</button>-->
+            <!--<h1 id="promptType"></h1>-->
+
+
+            <!-- as new inputs are added, ids are changed to reflect the prompt number -->
+            <div class="mainBody">
+                <div class="mainContainer">
+                    <div class="mainContent">
+                        <img id="promptImage">
+                        <h1 id="prompt">LOADING</h1>
+                        <p id="subPrompt">...</p>
+                        <div id="promptEntry">
+
+                            <div id="promptInput">
+
+                                <input type="text" name="promptAnswer" value="" id=""
+                                       class="formBorder interactiveInput"
+                                       placeholder="Enter answer here">
+                                <span class="focus-border"></span>
+                            </div>
+
+                            <div class="promptSubmit">
+                                <button type="button" class="inputSubmit btn small" name="InputSubmit" id="InputSubmit">Submit</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <a href="#" id="promptFinished" class="btn newPromptButton promptFinished">next prompt</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/main.js" charset="utf-8"></script>
+
+</body>
+</html>
