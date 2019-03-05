@@ -177,51 +177,51 @@ input[type="text"] {
 }
 
 
-.formBorder~.focus-border:before, .formBorder~.focus-border:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: $light-cyan;
-  transition: 0.3s;
-}
-
-.formBorder~.focus-border:after {
-  top: auto;
-  bottom: 0;
-  left: auto;
-  right: 0;
-}
-
-.formBorder~.focus-border i:before, .formBorder~.focus-border i:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 0;
-  background-color: $light-cyan;
-  transition: 0.4s;
-}
-
-.formBorder~.focus-border i:after {
-  left: auto;
-  right: 0;
-  top: auto;
-  bottom: 0;
-}
-
-.formBorder:focus~.focus-border:before, .formBorder:focus~.focus-border:after {
-  width: 100%;
-  transition: 0.3s;
-}
-
-.formBorder:focus~.focus-border i:before, .formBorder:focus~.focus-border i:after {
-  height: 100%;
-  transition: 0.4s;
-}
+// .formBorder~.focus-border:before, .formBorder~.focus-border:after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 0;
+//   height: 2px;
+//   background-color: $light-cyan;
+//   transition: 0.3s;
+// }
+//
+// .formBorder~.focus-border:after {
+//   top: auto;
+//   bottom: 0;
+//   left: auto;
+//   right: 0;
+// }
+//
+// .formBorder~.focus-border i:before, .formBorder~.focus-border i:after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 2px;
+//   height: 0;
+//   background-color: $light-cyan;
+//   transition: 0.4s;
+// }
+//
+// .formBorder~.focus-border i:after {
+//   left: auto;
+//   right: 0;
+//   top: auto;
+//   bottom: 0;
+// }
+//
+// .formBorder:focus~.focus-border:before, .formBorder:focus~.focus-border:after {
+//   width: 100%;
+//   transition: 0.3s;
+// }
+//
+// .formBorder:focus~.focus-border i:before, .formBorder:focus~.focus-border i:after {
+//   height: 100%;
+//   transition: 0.4s;
+// }
 
 /*================*/
 /*===END BUTTON===*/
