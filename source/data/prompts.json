@@ -104,9 +104,9 @@
       "title": "emotion",
       "type": "int",
       "prompt": "",
-      "body": "What emotion does this image give you?",
+      "body": "What emotion does this image give you?",     //IMAGE HERE PLZZZZZZZZZZZZ
       "hasImage": true,
-      "image": "/image/beeple.png"
+      "image": "/image/adelie.jpg"
     },
     {
       "id": "hello",
@@ -123,15 +123,6 @@
       "type": "nonint",
       "prompt": "",
       "body": "Knock on any surface.",
-      "hasImage": false,
-      "image": ""
-    },
-    {
-      "id": "mind",
-      "title": "mind",
-      "type": "int",
-      "prompt": "",
-      "body": "What is on your mind?",
       "hasImage": false,
       "image": ""
     },
