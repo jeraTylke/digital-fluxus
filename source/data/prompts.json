@@ -104,7 +104,7 @@
       "title": "emotion",
       "type": "int",
       "prompt": "",
-      "body": "What emotion does this image give you?",     //IMAGE HERE PLZZZZZZZZZZZZ
+      "body": "What emotion does this image give you?",
       "hasImage": true,
       "image": "/image/adelie.jpg"
     },
