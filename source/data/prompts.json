@@ -46,29 +46,11 @@
       "image": ""
     },   
     {
-      "id": "memory",
-      "title": "Memory",
-      "type": "int",
-      "prompt": "Memories",
-      "body": "What is a memory?",
-      "hasImage": false,
-      "image": ""
-    },
-    {
       "id": "shake",
       "title": "Shake Hands",
       "type": "nonint",
       "prompt": "Shake",
-      "body": "Shake hands with one of the presenters.",
-      "hasImage": false,
-      "image": ""
-    },
-    {
-      "id": "light",
-      "title": "light",
-      "type": "nonint",
-      "prompt": "",
-      "body": "Turn off a light. Turn it back on.",
+      "body": "Shake hands with somebody in the room.",
       "hasImage": false,
       "image": ""
     },
@@ -222,6 +204,33 @@
       "type": "nonint",
       "prompt": "",
       "body": "You are the sun. Tell the world!",
+      "hasImage": false,
+      "image": ""
+    },
+    {
+      "id": "flash",
+      "title": "colorFlash",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Red. Blue. Yellow.",
+      "hasImage": false,
+      "image": ""
+    },
+    {
+      "id": "tent",
+      "title": "tent",
+      "type": "nonint",
+      "prompt": "",
+      "body": "Make a tent.",
+      "hasImage": false,
+      "image": ""
+    },
+    {
+      "id": "finger",
+      "title": "finger",
+      "type": "nonint",
+      "prompt": "",
+      "body": "perform with finger(s).",
       "hasImage": false,
       "image": ""
     }
