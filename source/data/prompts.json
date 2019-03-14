@@ -233,6 +233,15 @@
       "body": "Perform with finger(s).",
       "hasImage": false,
       "image": ""
+    },
+    {
+      "id": "beeple",
+      "title": "beeple",
+      "type": "int",
+      "prompt": "",
+      "body": "Make up a name for this piece",
+      "hasImage": true,
+      "image": "/image/beeple.png"
     }
   ]
 }
