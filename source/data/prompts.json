@@ -230,7 +230,7 @@
       "title": "finger",
       "type": "nonint",
       "prompt": "",
-      "body": "perform with finger(s).",
+      "body": "Perform with finger(s).",
       "hasImage": false,
       "image": ""
     }
