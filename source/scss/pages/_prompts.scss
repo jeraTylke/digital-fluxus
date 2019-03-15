@@ -13,6 +13,12 @@
   max-height: 300px;
   margin: 0 auto;
   display: block;
+  @media screen and (min-width:768px){
+   max-height: 300px; 
+  }
+  @media screen and (min-width:320px){
+    max-height: none;
+  }
   &.active {
     opacity: 1;
     // max-height: 0 !important;

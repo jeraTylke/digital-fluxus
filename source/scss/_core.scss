@@ -8,6 +8,9 @@ html, body {box-sizing: border-box;margin: 0;padding: 0; height: 100%;}
   background: black;
   font-family: "Play", sans-serif;
   transition: background-color ease 1s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
 }
 .imageIP{
@@ -25,10 +28,12 @@ html, body {box-sizing: border-box;margin: 0;padding: 0; height: 100%;}
 
 #prompt {
   text-align: center;
-}
-
-#subPrompt {
-
+  @media screen and (min-width: 320px){
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 560px){
+    font-size: 1rem;
+  }
 }
 
 #promptEntry {
@@ -87,12 +92,32 @@ video#fluxusLogo {
   width: 80%;
 }
 
+#introDesc {
+  @media screen and (min-width: 320px){
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 560px){
+    font-size: 18pt;
+  }
+}
+
+#subPrompt {
+  font-size: 18pt;
+  @media screen and (min-width: 320px){
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 600px){
+    font-size: 18pt;
+  }
+}
+
+
 .mainContent p{
   text-align: center;
-  /*font-weight: bold;*/
+  // font-weight: bold;
   color: white;
   padding: 0 10px;
-  font-size: 18pt;
+  // font-size: 18pt;
   font-family: "Play",sans-serif;
 }
 
@@ -159,6 +184,7 @@ input[type="text"] {
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 1px;
+  padding: .5rem;
 }
 
 :focus {
